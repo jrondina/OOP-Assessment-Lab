@@ -5,5 +5,30 @@ public abstract class Monster {
     //TODO: Give the Monster health and damage properties, and create a constructor
     //Health and damage should be private member variables, so remember to add the correct methods required to access private variables 
 
+    private int mHealth;
+    private int mDamage;
+
+    public Monster(int health, int damage) {
+        mHealth = health;
+        mDamage = damage;
+
+    }
+
+    public int getHealth() {
+        return mHealth;
+    }
+
+    public void setHealth(int health) {
+        this.mHealth = health;
+    }
+
+    public int getDamage() {
+        return mDamage;
+    }
+
+    public void setDamage(int damage) {
+        this.mDamage = damage;
+    }
+
     public abstract String aboutMe();
 }
